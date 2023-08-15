@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-  
+ 
     <div class="card">
       <div class="search">
         <input
@@ -18,27 +18,37 @@
         <button><img src="/images/search.png" alt="icon search" /></button>
       </div>
       <div class="weather">
-        <img src="/images/rain.png" class="weather-icon" alt="icon rain" />
-        <h2 class="temp">22°c</h2>
-        <h3 class="city">Managua</h3>
+        <img src="/images/weatherAll.png" class="weather-icon" alt="icon rain" />
+        <h2 class="temp"></h2>
+        <h3 class="city"></h3>
         <div class="details">
           <div class="col">
             <img src="/images/humidity.png" alt="humidity icon" />
             <div>
-              <p class="humidity">50%</p>
+              <p class="humidity"></p>
               <p>Humidity</p>
             </div>
           </div>
           <div class="col">
             <img src="/images/wind.png" alt="wind icon" />
             <div>
-              <p class="wind">50Km/h</p>
+              <p class="wind"></p>
               <p>Wind Speed</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="countries">
+      <ul>
+          <li><a href="#" onclick="selectCountry('Managua')">Managua</a></li>
+          <li><a href="#" onclick="selectCountry('India')">India</a></li>
+          <li><a href="#" onclick="selectCountry('Paris')">París</a></li>
+          <li><a href="#" onclick="selectCountry('London')">Londres</a></li>
+          <li><a href="#" onclick="selectCountry('Argentina')">Argentina</a></li>
+          <li><a href="#" onclick="selectCountry('Newyork')">Nueva York</a></li>
+      </ul>
+  </div>
     <script src="/JavaScript/main.js"></script>
   </body>
 </html>

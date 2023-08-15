@@ -7,7 +7,41 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient( 89.7deg,  rgba(0,0,0,1) -10.7%, rgba(53,92,125,1) 88.8% );
+    background: hsla(177, 87%, 79%, 1);
+
+
+}
+.countries {
+    width: 35%;
+    margin: 30px auto;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.countries ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos fluyan a una nueva línea si no caben en el ancho disponible */
+    justify-content: space-between; /* Distribuye los elementos equitativamente a lo largo del contenedor */
+    padding: 0;
+}
+
+.countries li {
+    flex-basis: calc(33.33% - 10px); /* Ajusta el tamaño de cada elemento para que haya tres por fila */
+    margin: 5px;
+}
+
+/* El resto de tus estilos para .countries se mantienen igual */
+
+.countries a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.countries a:hover {
+    color: #007bff;
 }
 
 .card{
@@ -81,4 +115,29 @@ width: 16px;
     width: 40px;
     margin-right: 10px;
 
+} .weather{
+    display: none;
+}.countries a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative; /* Establece el contexto de posición para el pseudo-elemento */
+}
+
+.countries a::before {
+    content: ''; /* Agrega un contenido al pseudo-elemento */
+    position: absolute;
+    bottom: -3px; /* Coloca la línea debajo del texto */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; /* Color de la línea */
+    transform: scaleX(0); /* Inicialmente, la línea está invisible */
+    transform-origin: center; /* Origin del efecto de escala */
+    transition: transform 0.3s ease;
+}
+
+.countries a:hover::before {
+    transform: scaleX(1); /* Escala la línea para que sea visible al pasar el mouse */
 }
