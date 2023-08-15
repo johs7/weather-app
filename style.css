@@ -8,9 +8,8 @@
 }
 
 body{
-    background-color: #DCD9D4;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-    background-blend-mode: soft-light,screen;
+    background-image: radial-gradient(#09203f 0%, #537895 100%);
+
 }
 .countries {
     width: 40%;
@@ -33,7 +32,7 @@ body{
 .card{
     width: 90%;
     max-width: 470px;
-    background-image: linear-gradient(180deg, #27d989 0%, #92d5ff 100%);
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
     color: #fff;
     margin: 30px auto;
     font-family: 'Montserrat', sans-serif;
@@ -51,6 +50,7 @@ body{
 border: 0;
 outline: 0;
 background: #ebfffc;
+border: 1px solid rgb(125, 122, 111);
 padding: 15px 25px;
 font-family: 'Montserrat', sans-serif;
 height: 60px;
@@ -115,7 +115,7 @@ width: 17px;
     display: none;
 }.countries a {
     text-decoration: none;
-    color: #907575;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative; /* Establece el contexto de posición para el pseudo-elemento */
