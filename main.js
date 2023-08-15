@@ -37,3 +37,8 @@ async function checkWeather(city) {
 searchButton.addEventListener("click", () => {
     checkWeather(searchBox.value);
 });
+
+function selectCountry(country) {
+    // Llama a la función checkWeather con el nombre del país seleccionado
+    checkWeather(country);
+}
