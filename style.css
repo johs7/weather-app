@@ -158,8 +158,8 @@ width: 17px;
 }
 @media (max-width: 470px) {
     .search button {
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
     }
     .details {
       display: flex;
